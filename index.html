@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ECC Learner Diagnostic Mockups</title>
+    <link rel="stylesheet" href="styles.css?v=needs-mapping-1" />
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-compass" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M15.8 8.2 13.6 13.6 8.2 15.8l2.2-5.4 5.4-2.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-people" viewBox="0 0 24 24">
+        <path d="M8 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm8-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M2.8 20c.6-3.8 2.4-5.8 5.2-5.8 2.8 0 4.6 2 5.2 5.8M12.5 19.8c.5-3.2 1.9-4.8 4.2-4.8 2.4 0 3.9 1.7 4.4 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-lightbulb" viewBox="0 0 24 24">
+        <path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.8c.8.6 1.1 1.3 1.1 2.2h5.8c0-.9.3-1.6 1.1-2.2A7 7 0 0 0 12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-target" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M12 12 21 3M17.8 3H21v3.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24">
+        <path d="M4 19V5M4 19h17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M8 16v-5M13 16V8M18 16v-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 22c5-2.4 7.5-6.2 7.5-11.5V5L12 2 4.5 5v5.5C4.5 15.8 7 19.6 12 22Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="m8.4 12 2.2 2.2 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-link" viewBox="0 0 24 24">
+        <path d="M10 13.5a4 4 0 0 0 5.7 0l2.8-2.8A4 4 0 0 0 12.8 5l-1.4 1.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M14 10.5a4 4 0 0 0-5.7 0l-2.8 2.8A4 4 0 0 0 11.2 19l1.4-1.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-rocket" viewBox="0 0 24 24">
+        <path d="M14 5c2.8-2.4 5.5-2.6 7-2-.6 1.5-.9 4.2-3.2 7l-5.5 6-4.3-4.3 6-6.7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M8.2 12 4 13l-1 4.3 4.8-1.6M12 15.8 11 20l-4.3 1 1.6-4.8M15.5 7.8h.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-eye" viewBox="0 0 24 24">
+        <path d="M2.5 12s3.5-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.5 6.5-9.5 6.5S2.5 12 2.5 12Z" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="icon-clipboard" viewBox="0 0 24 24">
+        <path d="M9 4h6l1 2h3v15H5V6h3l1-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M9 11h6M9 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path d="M12 20.5s-8-4.8-8-11A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 8 3.5c0 6.2-8 11-8 11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </svg>
+
+    <div class="app-shell">
+      <aside class="side-nav" aria-label="Program navigation">
+        <div class="brand-block">
+          <div class="brand-mark">
+            <img src="assets/source/ecc-logo.png" alt="Emmanuel Catholic College logo" />
+          </div>
+          <div>
+            <strong>Learning Without Limits</strong>
+            <span>Diagnostic concept mockup</span>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <span class="nav-section-label">Core process</span>
+          <button class="nav-item active" data-goto="ecosystem">
+            <svg><use href="#icon-compass"></use></svg>
+            Ecosystem
+          </button>
+          <button class="nav-item" data-goto="challenge">
+            <svg><use href="#icon-lightbulb"></use></svg>
+            Why Change
+          </button>
+          <button class="nav-item" data-goto="knowing">
+            <svg><use href="#icon-people"></use></svg>
+            Know Learner
+          </button>
+          <button class="nav-item" data-goto="diagnostic">
+            <svg><use href="#icon-target"></use></svg>
+            Diagnostic
+          </button>
+          <button class="nav-item" data-goto="dashboard">
+            <svg><use href="#icon-chart"></use></svg>
+            Dashboard
+          </button>
+          <button class="nav-item" data-goto="intelligence">
+            <svg><use href="#icon-eye"></use></svg>
+            Intelligence
+          </button>
+          <button class="nav-item" data-goto="response">
+            <svg><use href="#icon-clipboard"></use></svg>
+            Response
+          </button>
+          <button class="nav-item" data-goto="limits">
+            <svg><use href="#icon-rocket"></use></svg>
+            Future
+          </button>
+          <span class="nav-section-label support-label">Supporting examples</span>
+          <button class="nav-item practice-nav-item" data-goto="practice">
+            <svg><use href="#icon-lightbulb"></use></svg>
+            Practice
+          </button>
+        </nav>
+        <div class="side-note">
+          <span>Executive narrative</span>
+          <strong>Why change -> What to know -> How to act</strong>
+        </div>
+      </aside>
+
+      <main class="screen-stage">
+        <section id="ecosystem" class="screen active" aria-labelledby="ecosystem-title">
+          <div class="hero-panel">
+            <div class="hero-copy">
+              <p class="eyebrow">Headline webpage</p>
+              <h1 id="ecosystem-title">The ECC Flourishing Ecosystem</h1>
+              <p class="lead">A drillable story for educators and Executive: why Year 8 needs a different diagnostic model, what flourishing requires, and how learning intelligence can guide the next best response.</p>
+              <div class="pill-row">
+                <button class="action-pill teal" data-goto="challenge">
+                  <svg><use href="#icon-compass"></use></svg>
+                  Explore the case
+                </button>
+                <button class="action-pill orange" data-goto="dashboard">
+                  <svg><use href="#icon-chart"></use></svg>
+                  Open dashboard mockup
+                </button>
+              </div>
+            </div>
+            <figure class="poster-feature">
+              <img src="assets/source/flourishing-ecosystem.png" alt="ECC Flourishing Ecosystem one-page visual" />
+            </figure>
+          </div>
+
+          <div class="ecosystem-map" aria-label="Program drill down map">
+            <button class="map-node explore" data-goto="challenge">
+              <span class="node-icon"><svg><use href="#icon-compass"></use></svg></span>
+              <span>
+                <strong>Human Flourishing</strong>
+                <em>Why reimagine Year 8?</em>
+              </span>
+            </button>
+            <button class="map-node connect" data-goto="knowing">
+              <span class="node-icon"><svg><use href="#icon-people"></use></svg></span>
+              <span>
+                <strong>Knowing the Learner</strong>
+                <em>What does research tell us?</em>
+              </span>
+            </button>
+            <button class="map-node diagnose" data-goto="diagnostic">
+              <span class="node-icon"><svg><use href="#icon-target"></use></svg></span>
+              <span>
+                <strong>ECC Learner Diagnostic</strong>
+                <em>What do they need most now?</em>
+              </span>
+            </button>
+            <button class="map-node intelligence" data-goto="intelligence">
+              <span class="node-icon"><svg><use href="#icon-eye"></use></svg></span>
+              <span>
+                <strong>Learning Intelligence</strong>
+                <em>Turn signals into decisions.</em>
+              </span>
+            </button>
+            <button class="map-node respond" data-goto="response">
+              <span class="node-icon"><svg><use href="#icon-clipboard"></use></svg></span>
+              <span>
+                <strong>Personalised Response</strong>
+                <em>Change the experience, not the expectation.</em>
+              </span>
+            </button>
+            <button class="map-node practice-node" data-goto="practice">
+              <span class="node-icon"><svg><use href="#icon-lightbulb"></use></svg></span>
+              <span>
+                <strong>Illustrations of Practice</strong>
+                <em>Teacher-created examples mapped across the model.</em>
+              </span>
+            </button>
+            <button class="map-node future" data-goto="limits">
+              <span class="node-icon"><svg><use href="#icon-rocket"></use></svg></span>
+              <span>
+                <strong>Learning Without Limits</strong>
+                <em>Different pathways, same high expectations.</em>
+              </span>
+            </button>
+          </div>
+        </section>
+
+        <section id="challenge" class="screen" aria-labelledby="challenge-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Drill down: human flourishing</p>
+              <h2 id="challenge-title">From Challenge to Flourishing</h2>
+              <p class="lead">This screen makes the case for change: Year 8 engagement often falls when learning feels less relevant, less relational and less connected to agency.</p>
+            </div>
+            <button class="next-link" data-goto="knowing">Next: Knowing the Learner <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="two-column">
+            <figure class="poster-card">
+              <img src="assets/source/from-challenge-to-flourishing.png" alt="From Challenge to Flourishing one-page visual" />
+            </figure>
+            <div class="argument-stack">
+              <article class="argument-card red-accent">
+                <span class="mini-label">The challenge</span>
+                <h3>Students ask, "Why am I learning this?"</h3>
+                <p>Academic pressure, reduced autonomy, lower relevance and the "in-between" nature of Year 8 can combine into disengagement.</p>
+              </article>
+              <article class="argument-card teal-accent">
+                <span class="mini-label">Research response</span>
+                <h3>Engagement is relational, purposeful and active.</h3>
+                <p>The recurring moves are smaller learning communities, stronger teacher-student relationships, student voice, authentic learning and early identification.</p>
+              </article>
+              <article class="argument-card purple-accent">
+                <span class="mini-label">The gap</span>
+                <h3>Current systems are good at history, weaker at diagnosis.</h3>
+                <p>Grades, attendance and completion tell us what has happened. The diagnostic needs to help teachers decide what should happen next.</p>
+              </article>
+              <div class="callout-band">
+                <strong>Executive proposition</strong>
+                <span>To help learners explore, connect and create, we first need to know what will unlock growth.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="knowing" class="screen" aria-labelledby="knowing-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Drill down: knowing the learner</p>
+              <h2 id="knowing-title">Knowing the Learner</h2>
+              <p class="lead">Achievement alone is not enough. Two students can share the same result and need very different support.</p>
+            </div>
+            <button class="next-link" data-goto="diagnostic">Next: Learner Diagnostic <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="research-grid">
+            <figure class="poster-card wide-poster">
+              <img src="assets/source/knowing-the-learner.png" alt="Knowing the Learner one-page visual" />
+            </figure>
+            <div class="domain-panel">
+              <h3>What flourishing learners need</h3>
+              <div class="domain-list">
+                <button class="domain-tile challenge-color" data-goto="diagnostic">
+                  <svg><use href="#icon-compass"></use></svg>
+                  <strong>Challenge</strong>
+                  <span>Am I ready for my next step?</span>
+                </button>
+                <button class="domain-tile mastery-color" data-goto="diagnostic">
+                  <svg><use href="#icon-shield"></use></svg>
+                  <strong>Mastery & Confidence</strong>
+                  <span>Do I believe I can grow?</span>
+                </button>
+                <button class="domain-tile purpose-color" data-goto="diagnostic">
+                  <svg><use href="#icon-target"></use></svg>
+                  <strong>Purpose</strong>
+                  <span>Why does this matter?</span>
+                </button>
+                <button class="domain-tile ownership-color" data-goto="diagnostic">
+                  <svg><use href="#icon-lightbulb"></use></svg>
+                  <strong>Ownership</strong>
+                  <span>Can I influence my learning?</span>
+                </button>
+                <button class="domain-tile connection-color" data-goto="diagnostic">
+                  <svg><use href="#icon-heart"></use></svg>
+                  <strong>Connection</strong>
+                  <span>Do I belong?</span>
+                </button>
+              </div>
+              <div class="support-note-grid">
+                <article class="support-note">
+                  <span class="mini-label">Core argument</span>
+                  <strong>Same achievement can hide different needs.</strong>
+                  <span>The point is not to replace achievement data, but to understand who the learner is becoming and what support they need next.</span>
+                </article>
+                <article class="support-note">
+                  <span class="mini-label">Research base</span>
+                  <strong>Engagement, persistence and growth are shaped by more than ability.</strong>
+                  <span>The poster connects the model to self-efficacy, self-determination, belonging, expectancy-value, mastery learning and adolescent engagement research.</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="diagnostic" class="screen" aria-labelledby="diagnostic-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Drill down: diagnostic model</p>
+              <h2 id="diagnostic-title">The ECC Learner Diagnostic</h2>
+              <p class="lead">The diagnostic connects existing data, learner voice, teacher insight and wellbeing information into a whole learner profile.</p>
+            </div>
+            <button class="next-link" data-goto="dashboard">Open Dashboard <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="diagnostic-layout">
+            <figure class="poster-card">
+              <img src="assets/source/ecc-learner-diagnostic.png" alt="ECC Learner Diagnostic one-page visual" />
+            </figure>
+            <div class="model-board">
+              <div class="question-card">
+                <span class="mini-label">Diagnostic question</span>
+                <h3>What is most likely to unlock growth next?</h3>
+                <p>The aim is not to rank students or create fixed labels. It is to identify the primary growth lever for action.</p>
+              </div>
+              <div class="source-grid">
+                <div><svg><use href="#icon-chart"></use></svg><strong>Existing data</strong><span>Achievement, attendance, behaviour, engagement</span></div>
+                <div><svg><use href="#icon-clipboard"></use></svg><strong>Reporting attributes</strong><span>Collaboration, engagement, flexibility, critical thinking, respect and responsibility</span></div>
+                <div><svg><use href="#icon-people"></use></svg><strong>Learner voice</strong><span>Interests, motivation, goals, reflections</span></div>
+                <div><svg><use href="#icon-eye"></use></svg><strong>Teacher insight</strong><span>Participation, persistence, relationships, learning behaviours</span></div>
+                <div><svg><use href="#icon-heart"></use></svg><strong>Wellbeing</strong><span>Belonging, connection, pastoral insight</span></div>
+              </div>
+              <div class="attribute-model-card">
+                <div>
+                  <span class="mini-label">Teacher-assessed data stream</span>
+                  <h3>Reporting Attributes</h3>
+                  <p>These attributes are collected across every subject and Pastoral Care, making them a strong diagnostic signal for consistency, context-specific dips and whole-learner patterns.</p>
+                </div>
+                <div class="attribute-pill-row">
+                  <span>Collaboration</span>
+                  <span>Engagement</span>
+                  <span>Flexibility</span>
+                  <span>Critical Thinking</span>
+                  <span>Respect & Responsibility</span>
+                </div>
+              </div>
+              <div class="practice-diagnostic-grid">
+                <article>
+                  <strong>My Steps evidence</strong>
+                  <span>Task initiation, scaffold requests, hint use, visual support needs and confidence reflections can help identify access barriers.</span>
+                </article>
+                <article>
+                  <strong>Luna evidence</strong>
+                  <span>Pathway choice, collaboration, product quality, persistence and expo reflection can reveal purpose, challenge, ownership and connection.</span>
+                </article>
+              </div>
+              <div class="flow-strip">
+                <span>Evidence</span>
+                <b>+</b>
+                <span>Voice</span>
+                <b>+</b>
+                <span>Insight</span>
+                <b>=</b>
+                <strong>Primary growth lever</strong>
+              </div>
+              <button class="large-link" data-goto="dashboard">
+                Preview the diagnostic dashboard
+                <svg><use href="#icon-arrow"></use></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="intelligence" class="screen" aria-labelledby="intelligence-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Drill down: learning intelligence</p>
+              <h2 id="intelligence-title">Learning Intelligence</h2>
+              <p class="lead">This screen reframes information as decision support: who needs what, when and why?</p>
+            </div>
+            <button class="next-link" data-goto="response">Next: Personalised Response <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="two-column reverse">
+            <div class="argument-stack">
+              <article class="argument-card teal-accent">
+                <span class="mini-label">Big shift</span>
+                <h3>From "What happened?" to "What should happen next?"</h3>
+                <p>Learning intelligence uses observation, learner voice and learning evidence to identify the next best action for growth.</p>
+              </article>
+              <article class="argument-card orange-accent">
+                <span class="mini-label">Complete learner picture</span>
+                <h3>Observation + learner voice + learning evidence.</h3>
+                <p>Teacher observations, what learners tell us and what learning experiences reveal need to be read together.</p>
+              </article>
+              <article class="argument-card green-accent">
+                <span class="mini-label">Learner signals</span>
+                <h3>Challenge, Confidence, Purpose, Ownership and Connection.</h3>
+                <p>The signals help teachers ask whether the learner is stretched, supported, motivated, agentic and known.</p>
+              </article>
+              <article class="argument-card purple-accent">
+                <span class="mini-label">Decision cycle</span>
+                <h3>Experience -> evidence -> insight -> diagnosis -> action -> growth.</h3>
+                <p>The dashboard should make this cycle visible enough for teachers to respond earlier and more consistently.</p>
+              </article>
+              <div class="callout-band">
+                <strong>Big idea</strong>
+                <span>Learning Intelligence is not about collecting more information. It is about making better decisions.</span>
+              </div>
+            </div>
+            <figure class="poster-card">
+              <img src="assets/source/learning-intelligence.png" alt="Learning Intelligence one-page visual" />
+            </figure>
+          </div>
+        </section>
+
+        <section id="response" class="screen" aria-labelledby="response-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Drill down: personalised learning response</p>
+              <h2 id="response-title">Turning Insight Into Action</h2>
+              <p class="lead">The response changes the learning experience, support, context and classroom culture while keeping expectations high.</p>
+            </div>
+            <button class="next-link" data-goto="limits">Next: Learning Without Limits <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="response-layout">
+            <figure class="poster-card">
+              <img src="assets/source/personalised-learning-response.png" alt="Personalised Learning Response one-page visual" />
+            </figure>
+            <div class="pathway-board">
+              <h3>Response pathways</h3>
+              <div class="pathway-row">
+                <div class="pathway challenge-color"><strong>Challenge</strong><span>Stretch, extension and productive struggle</span></div>
+                <div class="pathway mastery-color"><strong>Mastery & Confidence</strong><span>Scaffolds, feedback and visible progress</span></div>
+                <div class="pathway purpose-color"><strong>Purpose</strong><span>Authentic learning, relevance and future pathways</span></div>
+                <div class="pathway ownership-color"><strong>Ownership</strong><span>Choice, goal setting and agency</span></div>
+                <div class="pathway connection-color"><strong>Connection</strong><span>Belonging, relationships and support</span></div>
+              </div>
+              <div class="response-to-limits">
+                <span class="mini-label">Response becomes experience</span>
+                <p>The personalised response should select or design the learning experience because it meets the diagnosed need, not because the learner has been placed in a fixed category.</p>
+              </div>
+              <div class="product-bridge">
+                <span class="mini-label">Illustration of practice</span>
+                <h4>My Steps</h4>
+                <p>A student-facing AI scaffold that turns an uploaded task into calm, sequential, achievable steps.</p>
+                <div class="fit-tags">
+                  <span>Confidence</span>
+                  <span>Ownership</span>
+                  <span>Purpose</span>
+                  <span>Connection</span>
+                </div>
+                <button class="large-link" data-goto="practice">
+                  See illustrations of practice
+                  <svg><use href="#icon-arrow"></use></svg>
+                </button>
+              </div>
+              <button class="large-link" data-goto="planner">
+                Open a response planner drill-down
+                <svg><use href="#icon-arrow"></use></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="practice" class="screen" aria-labelledby="practice-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Subset: teacher-created examples</p>
+              <h2 id="practice-title">Illustrations of Practice</h2>
+              <p class="lead">These are not separate pillars. They are examples of how teacher-created tools, routines and learning worlds can generate diagnostic evidence, shape personalised responses and point toward Learning Without Limits.</p>
+            </div>
+            <button class="next-link" data-goto="limits">Next: Learning Without Limits <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="product-shelf">
+            <article class="product-spotlight panel project-preview-card">
+              <div class="product-mark project-mark">
+                <svg><use href="#icon-rocket"></use></svg>
+              </div>
+              <div>
+                <span class="mini-label">Learner-needs illustration</span>
+                <h3>Luna Civilisation</h3>
+                <p>A 10-week interdisciplinary Year 8 project where students help design humanity's first sustainable home on the Moon. It combines common core learning with specialist pathways, public exhibition and meaningful student choice.</p>
+                <div class="fit-tags">
+                  <span>Challenge</span>
+                  <span>Confidence</span>
+                  <span>Purpose</span>
+                  <span>Ownership</span>
+                  <span>Connection</span>
+                </div>
+                <div class="product-actions">
+                  <button class="large-link" data-goto="projects">
+                    View learner-needs map
+                    <svg><use href="#icon-arrow"></use></svg>
+                  </button>
+                  <button class="large-link" data-goto="limits">
+                    View future learning context
+                    <svg><use href="#icon-arrow"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-spotlight panel">
+              <div class="product-mark">
+                <svg><use href="#icon-clipboard"></use></svg>
+              </div>
+              <div>
+                <span class="mini-label">Diagnostic and response illustration</span>
+                <h3>My Steps</h3>
+                <p>A custom GPT that helps students receiving learning support break curriculum tasks into clear, kind, step-by-step actions. It reduces cognitive load by simplifying language, asking one question at a time and providing sentence starters, hints or visuals when needed.</p>
+                <div class="product-actions">
+                  <a class="large-link external-link" href="https://chatgpt.com/g/g-67e374f5425881919843b142345ad0b3-my-steps" target="_blank" rel="noreferrer">
+                    Open My Steps GPT
+                    <svg><use href="#icon-arrow"></use></svg>
+                  </a>
+                  <button class="large-link" data-goto="planner">
+                    Add to a response plan
+                    <svg><use href="#icon-arrow"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel product-fit">
+              <div class="panel-title">
+                <h3>My Steps: Where It Fits</h3>
+                <span>Diagnostic evidence and scaffolded response</span>
+              </div>
+              <div class="product-flow">
+                <span>Student uploads task</span>
+                <b></b>
+                <span>AI simplifies language</span>
+                <b></b>
+                <span>Student completes next step</span>
+                <b></b>
+                <strong>Confidence grows</strong>
+              </div>
+              <p>My Steps is best used when the barrier is not capability, but access: the student cannot see how to begin, hold the whole task in mind, or translate the task sheet into a first action.</p>
+            </article>
+
+            <article class="panel product-fit">
+              <div class="panel-title">
+                <h3>My Steps Diagnostic Triggers</h3>
+                <span>When to recommend it</span>
+              </div>
+              <div class="trigger-grid">
+                <div><strong>Mastery & Confidence</strong><span>"I don't know how to start."</span></div>
+                <div><strong>Ownership</strong><span>"Help me do the next part myself."</span></div>
+                <div><strong>Purpose</strong><span>"What is this task actually asking?"</span></div>
+                <div><strong>Connection</strong><span>"I need calm, non-judgemental support."</span></div>
+              </div>
+            </article>
+
+            <article class="panel product-fit">
+              <div class="panel-title">
+                <h3>My Steps Evidence It Could Feed Back</h3>
+                <span>Learning intelligence</span>
+              </div>
+              <ul class="evidence-list">
+                <li>Which steps students request help with most often.</li>
+                <li>Whether task initiation improves over time.</li>
+                <li>How often students use hints, sentence starters or visuals.</li>
+                <li>Student confidence/reflection after completing a scaffolded step.</li>
+              </ul>
+            </article>
+
+            <article class="panel product-library">
+              <div class="panel-title">
+                <h3>Future Practice Shelf</h3>
+                <span>Feature other teacher innovations here</span>
+              </div>
+              <div class="library-grid">
+                <div><strong>Diagnostic examples</strong><span>Evidence streams, student reflections, teacher observations and pathway data</span></div>
+                <div><strong>Response examples</strong><span>Scaffolds, coaching routines, AI supports and targeted learning moves</span></div>
+                <div><strong>Future learning examples</strong><span>Authentic projects, exhibitions, simulations and community challenges</span></div>
+                <div><strong>Learning intelligence examples</strong><span>Patterns from student choices, help requests, contribution and growth</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="screen" aria-labelledby="projects-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Illustration of practice: learner needs in action</p>
+              <h2 id="projects-title">Luna Civilisation</h2>
+              <p class="lead">A teacher-created project model showing how one learning world can support different learner needs while holding the same high expectations.</p>
+            </div>
+            <button class="next-link" data-goto="limits">Next: Learning Without Limits <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="project-layout">
+            <figure class="poster-card wide-poster project-poster">
+              <img src="assets/source/luna-civilisation-pathways.jpg" alt="Luna Civilisation project pathways visual" />
+            </figure>
+            <div class="project-board">
+              <article class="panel project-summary">
+                <span class="mini-label">Model fit</span>
+                <h3>Learning matched to need</h3>
+                <p>Luna Civilisation is not just a project theme. It is a designed learning environment that can meet different learner needs while keeping the same high expectations.</p>
+              </article>
+              <article class="panel">
+                <div class="panel-title">
+                  <h3>Learning Matched to Need</h3>
+                  <span>Diagnostic needs supported by the project design</span>
+                </div>
+                <div class="need-map-grid">
+                  <div class="need-card need-challenge"><strong>Challenge</strong><span>Complex lunar problems stretch thinking through design, systems, ethics, resources and survival constraints.</span></div>
+                  <div class="need-card need-confidence"><strong>Confidence</strong><span>Common core learning, team roles, visible milestones and concrete product options help students see progress.</span></div>
+                  <div class="need-card need-purpose"><strong>Purpose</strong><span>The mission gives learning a reason: design an essential contribution to a future human civilisation.</span></div>
+                  <div class="need-card need-ownership"><strong>Ownership</strong><span>Students choose a specialist pathway, expert role and product format that lets them influence their learning.</span></div>
+                  <div class="need-card need-connection"><strong>Connection</strong><span>Every pathway contributes to one shared colony, strengthening belonging through collaboration and expo success.</span></div>
+                </div>
+              </article>
+              <article class="panel">
+                <div class="panel-title">
+                  <h3>Diagnostic Evidence It Can Generate</h3>
+                  <span>Need-based signals</span>
+                </div>
+                <div class="library-grid">
+                  <div><strong>Challenge</strong><span>Readiness for complex problems, productive struggle, persistence and extension.</span></div>
+                  <div><strong>Confidence</strong><span>Response to milestones, help-seeking, visible progress and recovery from difficulty.</span></div>
+                  <div><strong>Purpose</strong><span>Relevance, future connection, investment in the mission and quality of contribution.</span></div>
+                  <div><strong>Ownership</strong><span>Pathway choice, goal setting, independent decisions and responsibility for a role.</span></div>
+                  <div><strong>Connection</strong><span>Belonging, collaboration, shared success and contribution to the wider group.</span></div>
+                </div>
+              </article>
+              <article class="panel">
+                <div class="panel-title">
+                  <h3>Pathways</h3>
+                  <span>Specialist roles</span>
+                </div>
+                <div class="pathway-chip-grid">
+                  <span>Space Architect</span>
+                  <span>Lunar Engineer</span>
+                  <span>Lunar Governor</span>
+                  <span>Economic Strategist</span>
+                  <span>Culture & Humanity Leader</span>
+                  <span>Communications Director</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="authentic-projects-strip">
+            <figure class="poster-card project-mini-poster">
+              <img src="assets/source/year-8-authentic-projects-a.png" alt="Year 8 Authentic Projects overview" />
+            </figure>
+            <article class="panel">
+              <div class="panel-title">
+                <h3>Program Shelf</h3>
+                <span>Four cross-curricular projects</span>
+              </div>
+              <div class="library-grid">
+                <div><strong>Green Futures</strong><span>Need fit: Purpose, Challenge, Ownership and Connection through sustainable action.</span></div>
+                <div><strong>Stories That Shape Us</strong><span>Need fit: Connection, Ownership, Purpose and Confidence through identity and voice.</span></div>
+                <div><strong>Future Cities / Luna</strong><span>Need fit: Challenge, Confidence, Purpose, Ownership and Connection through a shared mission.</span></div>
+                <div><strong>Wellbeing in Action</strong><span>Need fit: Connection, Purpose, Confidence and Ownership through community wellbeing.</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="limits" class="screen" aria-labelledby="limits-title">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Destination page</p>
+              <h2 id="limits-title">Learning Without Limits</h2>
+              <p class="lead">The future learning experience: many pathways, many experiences, many ways to demonstrate learning, with the same high expectations.</p>
+            </div>
+            <button class="next-link" data-goto="ecosystem">Back to Ecosystem <svg><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="limits-layout">
+            <figure class="poster-card wide-poster">
+              <img src="assets/source/learning-without-limits.png" alt="Learning Without Limits one-page visual" />
+            </figure>
+            <div class="practice-fit-grid">
+              <article class="panel">
+                <span class="mini-label">Access into future learning</span>
+                <h3>My Steps</h3>
+                <p>Helps students enter complex learning experiences by reducing cognitive load, clarifying the next step and giving scaffolded support without lowering the standard.</p>
+                <div class="fit-tags">
+                  <span>Confidence</span>
+                  <span>Ownership</span>
+                  <span>Purpose</span>
+                </div>
+              </article>
+              <article class="panel">
+                <span class="mini-label">Learning matched to need</span>
+                <h3>Luna Civilisation</h3>
+                <p>Shows how an authentic project can stretch challenge, build confidence through milestones, create purpose, increase ownership through pathways and strengthen connection through a shared mission.</p>
+                <div class="fit-tags">
+                  <span>Challenge</span>
+                  <span>Confidence</span>
+                  <span>Purpose</span>
+                  <span>Ownership</span>
+                  <span>Connection</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="dashboard" class="screen dashboard-screen" aria-labelledby="dashboard-title">
+          <div class="dashboard-topbar">
+            <div>
+              <p class="eyebrow">Dashboard mockup</p>
+              <h2 id="dashboard-title">Year 8 Learner Diagnostic</h2>
+              <p>Class view: where does each learner need the next best response?</p>
+            </div>
+            <div class="dashboard-actions">
+              <button data-goto="profile">Student drill-down</button>
+              <button data-goto="evidence">Evidence detail</button>
+              <button data-goto="attributes">Attributes</button>
+              <button data-goto="planner">Response planner</button>
+            </div>
+          </div>
+          <div class="dashboard-grid">
+            <article class="metric-card">
+              <span>Class primary lever</span>
+              <strong>Purpose</strong>
+              <small>11 of 28 learners</small>
+            </article>
+            <article class="metric-card">
+              <span>Hidden risk</span>
+              <strong>6</strong>
+              <small>Achievement masks disengagement</small>
+            </article>
+            <article class="metric-card">
+              <span>Attribute concern</span>
+              <strong>Flexibility</strong>
+              <small>Marked dip in Careers and Maths</small>
+            </article>
+            <article class="metric-card">
+              <span>Next review</span>
+              <strong>3 weeks</strong>
+              <small>Term 2 learning cycle</small>
+            </article>
+
+            <article class="panel class-map">
+              <div class="panel-title">
+                <h3>Class Growth Levers</h3>
+                <span>Need support / on track / strength</span>
+              </div>
+              <div class="stacked-bars">
+                <div class="bar-row"><span>Challenge</span><i style="--a: 28%; --b: 44%; --c: 28%"></i><b>7 / 12 / 9</b></div>
+                <div class="bar-row"><span>Confidence</span><i style="--a: 35%; --b: 42%; --c: 23%"></i><b>9 / 11 / 6</b></div>
+                <div class="bar-row"><span>Purpose</span><i style="--a: 48%; --b: 35%; --c: 17%"></i><b>11 / 10 / 7</b></div>
+                <div class="bar-row"><span>Ownership</span><i style="--a: 33%; --b: 47%; --c: 20%"></i><b>8 / 13 / 7</b></div>
+                <div class="bar-row"><span>Connection</span><i style="--a: 22%; --b: 53%; --c: 25%"></i><b>5 / 15 / 8</b></div>
+              </div>
+            </article>
+
+            <article class="panel learner-table">
+              <div class="panel-title">
+                <h3>Priority Learners</h3>
+                <span>Click a row to drill into the profile</span>
+              </div>
+              <button class="learner-row" data-goto="profile">
+                <span class="avatar">JS</span>
+                <span><strong>Jenny Smith</strong><small>State: coasting</small></span>
+                <b class="tag purpose-tag">Purpose</b>
+                <em>High risk</em>
+              </button>
+              <button class="learner-row" data-goto="profile">
+                <span class="avatar alt">MK</span>
+                <span><strong>Micah King</strong><small>State: stuck</small></span>
+                <b class="tag mastery-tag">Confidence</b>
+                <em>Medium</em>
+              </button>
+              <button class="learner-row" data-goto="profile">
+                <span class="avatar green">AL</span>
+                <span><strong>Ava Lin</strong><small>State: productive challenge</small></span>
+                <b class="tag challenge-tag">Challenge</b>
+                <em>Low</em>
+              </button>
+              <button class="learner-row" data-goto="profile">
+                <span class="avatar purple">TN</span>
+                <span><strong>Tom Nguyen</strong><small>State: disconnected</small></span>
+                <b class="tag connection-tag">Connection</b>
+                <em>High</em>
+              </button>
+            </article>
+
+            <article class="panel heatmap-panel">
+              <div class="panel-title">
+                <h3>Cross-Curricular Heatmap</h3>
+                <span>Achievement, engagement and attributes</span>
+              </div>
+              <div class="heatmap">
+                <span></span><b>English</b><b>Maths</b><b>Science</b><b>Careers</b><b>Pastoral</b>
+                <b>Achievement</b><i class="good">B</i><i class="good">B</i><i class="good">B</i><i class="alert">D</i><i class="neutral">-</i>
+                <b>Engagement</b><i class="good">Good</i><i class="watch">Sat.</i><i class="good">Good</i><i class="alert">N/A</i><i class="watch">Sat.</i>
+                <b>Flexibility</b><i class="good">Good</i><i class="alert">N/A</i><i class="watch">Sat.</i><i class="alert">N/A</i><i class="watch">Sat.</i>
+                <b>Respect</b><i class="good">Good</i><i class="good">Good</i><i class="good">Good</i><i class="watch">Sat.</i><i class="good">Good</i>
+              </div>
+              <div class="insight-note">
+                <strong>Pattern detected</strong>
+                <span>Jenny's achievement is masking attribute dips. Flexibility and engagement are weaker in Careers and Maths, while respect remains stable across contexts.</span>
+              </div>
+            </article>
+
+            <article class="panel attributes-panel">
+              <div class="panel-title">
+                <h3>Reporting Attributes</h3>
+                <span>Teacher-assessed across subjects and Pastoral Care</span>
+              </div>
+              <div class="attribute-bars">
+                <div><span>Collaboration</span><i style="--score: 72%"></i><b>Mostly Good</b></div>
+                <div><span>Engagement</span><i class="watch" style="--score: 54%"></i><b>Inconsistent</b></div>
+                <div><span>Flexibility</span><i class="alert" style="--score: 41%"></i><b>Context dip</b></div>
+                <div><span>Critical Thinking</span><i style="--score: 68%"></i><b>Developing</b></div>
+                <div><span>Respect & Responsibility</span><i style="--score: 81%"></i><b>Stable</b></div>
+              </div>
+              <button class="large-link" data-goto="attributes">
+                View attribute evidence
+                <svg><use href="#icon-arrow"></use></svg>
+              </button>
+            </article>
+
+            <article class="panel action-panel">
+              <div class="panel-title">
+                <h3>Recommended Class Move</h3>
+                <span>Based on current patterns</span>
+              </div>
+              <div class="action-content">
+                <svg><use href="#icon-target"></use></svg>
+                <div>
+                  <strong>Run a real-world challenge sprint</strong>
+                  <p>Use a shared authentic problem with student choice of product, audience and pathway. Track purpose, ownership and connection for three weeks.</p>
+                </div>
+              </div>
+              <button class="large-link" data-goto="planner">Build response plan <svg><use href="#icon-arrow"></use></svg></button>
+            </article>
+          </div>
+        </section>
+
+        <section id="profile" class="screen dashboard-screen" aria-labelledby="profile-title">
+          <div class="dashboard-topbar">
+            <div>
+              <p class="eyebrow">Student drill-down</p>
+              <h2 id="profile-title">Jenny Smith: Whole Learner Profile</h2>
+              <p>Current learner state: coasting. Primary growth lever: purpose.</p>
+            </div>
+            <div class="dashboard-actions">
+              <button data-goto="dashboard">Class view</button>
+              <button data-goto="evidence">Evidence detail</button>
+              <button data-goto="planner">Response planner</button>
+            </div>
+          </div>
+          <div class="profile-grid">
+            <article class="panel learner-summary">
+              <div class="profile-avatar">JS</div>
+              <div>
+                <span class="mini-label">Year 8, House Emmanuel</span>
+                <h3>Strong achievement, declining relevance</h3>
+                <p>Jenny is maintaining grades across most subjects, but learner voice and teacher notes suggest the work is feeling less meaningful.</p>
+              </div>
+              <b class="confidence-ring" style="--value: 84%">84%</b>
+            </article>
+            <article class="panel domain-radar">
+              <div class="panel-title">
+                <h3>Flourishing Domains</h3>
+                <span>Score and trend</span>
+              </div>
+              <div class="domain-meter-list">
+                <div><span>Challenge</span><i style="--score:78%"></i><b>78</b></div>
+                <div><span>Mastery & Confidence</span><i style="--score:82%"></i><b>82</b></div>
+                <div><span>Purpose</span><i class="low" style="--score:43%"></i><b>43</b></div>
+                <div><span>Ownership</span><i style="--score:67%"></i><b>67</b></div>
+                <div><span>Connection</span><i style="--score:74%"></i><b>74</b></div>
+              </div>
+            </article>
+            <article class="panel trend-panel">
+              <div class="panel-title">
+                <h3>Trajectory</h3>
+                <span>Term pattern</span>
+              </div>
+              <div class="trend-lines">
+                <div><span>Achievement</span><i class="line good-line"></i><b>B</b></div>
+                <div><span>Engagement</span><i class="line alert-line"></i><b>Low</b></div>
+                <div><span>Attendance</span><i class="line stable-line"></i><b>92%</b></div>
+                <div><span>Purpose voice</span><i class="line alert-line"></i><b>31</b></div>
+              </div>
+            </article>
+            <article class="panel next-steps-card">
+              <div class="panel-title">
+                <h3>Recommended Next Steps</h3>
+                <span>Teacher-facing</span>
+              </div>
+              <ol>
+                <li>Hold a purpose-focused learning conversation.</li>
+                <li>Connect the next task to a real audience or future pathway.</li>
+                <li>Offer product choice while keeping standards explicit.</li>
+              </ol>
+              <button class="large-link" data-goto="planner">Convert to response plan <svg><use href="#icon-arrow"></use></svg></button>
+            </article>
+          </div>
+        </section>
+
+        <section id="evidence" class="screen dashboard-screen" aria-labelledby="evidence-title">
+          <div class="dashboard-topbar">
+            <div>
+              <p class="eyebrow">Diagnostic drill-down</p>
+              <h2 id="evidence-title">Evidence Behind the Diagnosis</h2>
+              <p>Purpose is not a guess. It is a triangulated pattern across voice, engagement and context.</p>
+            </div>
+            <div class="dashboard-actions">
+              <button data-goto="dashboard">Class view</button>
+              <button data-goto="profile">Student profile</button>
+              <button data-goto="attributes">Attributes</button>
+              <button data-goto="planner">Response planner</button>
+            </div>
+          </div>
+          <div class="evidence-grid">
+            <article class="panel evidence-source">
+              <svg><use href="#icon-people"></use></svg>
+              <h3>Learner Voice</h3>
+              <p>Low relevance score and reflections show limited future connection.</p>
+              <b>2.1 / 5</b>
+            </article>
+            <article class="panel evidence-source">
+              <svg><use href="#icon-eye"></use></svg>
+              <h3>Teacher Observation</h3>
+              <p>Engagement drops during abstract tasks, improves when audience is clear.</p>
+              <b>Context-specific</b>
+            </article>
+            <article class="panel evidence-source">
+              <svg><use href="#icon-chart"></use></svg>
+              <h3>Learning Evidence</h3>
+              <p>Grades remain sound, but contributions and voluntary extension have declined.</p>
+              <b>Hidden risk</b>
+            </article>
+            <article class="panel evidence-source">
+              <svg><use href="#icon-clipboard"></use></svg>
+              <h3>Reporting Attributes</h3>
+              <p>Teacher-assessed ratings show whether learner behaviours are consistent across subjects or context-specific.</p>
+              <b>Core signal</b>
+            </article>
+            <article class="panel evidence-source">
+              <svg><use href="#icon-heart"></use></svg>
+              <h3>Wellbeing</h3>
+              <p>No acute concern, but belonging is protective and should be maintained.</p>
+              <b>Stable</b>
+            </article>
+            <article class="panel evidence-synthesis">
+              <div class="panel-title">
+                <h3>Diagnostic Synthesis</h3>
+                <span>What is getting in the way?</span>
+              </div>
+              <p>Jenny appears capable and connected enough to keep performing, but the purpose signal is weakening. The best response is likely to increase relevance, authentic application and student choice before achievement declines.</p>
+              <div class="signal-chain">
+                <span>Achievement stable</span>
+                <span>Engagement falling</span>
+                <span>Purpose low</span>
+                <strong>Act early</strong>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="attributes" class="screen dashboard-screen" aria-labelledby="attributes-title">
+          <div class="dashboard-topbar">
+            <div>
+              <p class="eyebrow">Diagnostic data stream</p>
+              <h2 id="attributes-title">Reporting Attributes Evidence</h2>
+              <p>Teacher-assessed attributes collected across every subject and Pastoral Care become a strong indicator of learner state, consistency and context-specific need.</p>
+            </div>
+            <div class="dashboard-actions">
+              <button data-goto="dashboard">Class view</button>
+              <button data-goto="evidence">Evidence detail</button>
+              <button data-goto="planner">Response planner</button>
+            </div>
+          </div>
+          <div class="attribute-detail-grid">
+            <figure class="poster-card attribute-poster">
+              <img src="assets/source/reporting-attributes.png" alt="Reporting Attributes overview" />
+            </figure>
+            <article class="panel">
+              <div class="panel-title">
+                <h3>What This Adds to the Diagnostic</h3>
+                <span>Beyond achievement</span>
+              </div>
+              <div class="attribute-insight-list">
+                <div><strong>Consistency</strong><span>Are Collaboration, Engagement and Respect stable across every subject?</span></div>
+                <div><strong>Context dips</strong><span>Are attributes markedly reduced in one learning area, teacher context or task type?</span></div>
+                <div><strong>Pastoral comparison</strong><span>Does Pastoral Care confirm the same pattern, or show a different learner state?</span></div>
+                <div><strong>Early warning</strong><span>Are Flexibility or Engagement dropping before grades decline?</span></div>
+              </div>
+            </article>
+            <article class="panel attribute-matrix-panel">
+              <div class="panel-title">
+                <h3>Subject Attribute Pattern</h3>
+                <span>Example learner view</span>
+              </div>
+              <div class="attribute-matrix">
+                <span></span><b>Eng.</b><b>Maths</b><b>Science</b><b>Careers</b><b>Pastoral</b>
+                <b>Collaboration</b><i class="good">G</i><i class="good">G</i><i class="watch">S</i><i class="watch">S</i><i class="good">G</i>
+                <b>Engagement</b><i class="good">G</i><i class="watch">S</i><i class="good">G</i><i class="alert">N/A</i><i class="watch">S</i>
+                <b>Flexibility</b><i class="good">G</i><i class="alert">N/A</i><i class="watch">S</i><i class="alert">N/A</i><i class="watch">S</i>
+                <b>Critical Thinking</b><i class="good">G</i><i class="watch">S</i><i class="good">G</i><i class="watch">S</i><i class="neutral">-</i>
+                <b>Respect</b><i class="good">G</i><i class="good">G</i><i class="good">G</i><i class="watch">S</i><i class="good">G</i>
+              </div>
+              <p class="attribute-note">Key: G = Good, S = Satisfactory, N/A = Needs Attention. The diagnostic looks for pattern and variation, not a single attribute score.</p>
+            </article>
+            <article class="panel attribute-mapping-panel">
+              <div class="panel-title">
+                <h3>How Attributes Inform Needs</h3>
+                <span>Diagnostic interpretation</span>
+              </div>
+              <div class="attribute-need-map">
+                <div><strong>Engagement</strong><span>Purpose, Challenge, Connection</span></div>
+                <div><strong>Flexibility</strong><span>Confidence, Ownership, Challenge</span></div>
+                <div><strong>Collaboration</strong><span>Connection, Ownership</span></div>
+                <div><strong>Critical Thinking</strong><span>Challenge, Purpose</span></div>
+                <div><strong>Respect & Responsibility</strong><span>Connection, Ownership, Confidence</span></div>
+              </div>
+            </article>
+            <article class="panel descriptors-panel">
+              <div class="panel-title">
+                <h3>Achievement Descriptors Reference</h3>
+                <span>Teacher judgement scale</span>
+              </div>
+              <p>Because attributes are teacher assessed, the descriptors matter. They help the diagnostic interpret whether a learner is showing Excellent, Good, Satisfactory or Needs Attention behaviours across subjects.</p>
+            </article>
+            <figure class="poster-card descriptors-poster">
+              <img src="assets/source/reporting-attributes-descriptors.png" alt="Reporting Attributes achievement descriptors" />
+            </figure>
+          </div>
+        </section>
+
+        <section id="planner" class="screen dashboard-screen" aria-labelledby="planner-title">
+          <div class="dashboard-topbar">
+            <div>
+              <p class="eyebrow">Response drill-down</p>
+              <h2 id="planner-title">Personalised Learning Response Plan</h2>
+              <p>Turn the diagnostic into deliberate changes to learning design, support and review.</p>
+            </div>
+            <div class="dashboard-actions">
+              <button data-goto="dashboard">Class view</button>
+              <button data-goto="profile">Student profile</button>
+              <button data-goto="practice">Practice examples</button>
+              <button data-goto="limits">Future experience</button>
+            </div>
+          </div>
+          <div class="planner-grid">
+            <article class="panel plan-hero">
+              <svg><use href="#icon-target"></use></svg>
+              <div>
+                <span class="mini-label">Primary growth lever</span>
+                <h3>Purpose</h3>
+                <p>Goal: increase relevance and future connection while preserving challenge.</p>
+              </div>
+            </article>
+            <article class="panel recommended-product">
+              <div class="panel-title">
+                <h3>Illustrations of Practice</h3>
+                <span>Access plus experience</span>
+              </div>
+              <div class="recommended-product-grid">
+                <div class="recommended-product-body">
+                  <div class="product-mark small">
+                    <svg><use href="#icon-clipboard"></use></svg>
+                  </div>
+                  <div>
+                    <strong>My Steps</strong>
+                    <p>Use when Jenny needs help converting a task sheet into a first action, a sentence starter or a visual prompt without lowering expectations.</p>
+                    <div class="fit-tags">
+                      <span>Confidence</span>
+                      <span>Ownership</span>
+                      <span>Purpose</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommended-product-body">
+                  <div class="product-mark small project-mark">
+                    <svg><use href="#icon-rocket"></use></svg>
+                  </div>
+                  <div>
+                    <strong>Luna Civilisation</strong>
+                    <p>Use when the response needs a purpose-rich project world: choice of expert role, real design challenge, team contribution and public exhibition.</p>
+                    <div class="fit-tags">
+                      <span>Challenge</span>
+                      <span>Confidence</span>
+                      <span>Purpose</span>
+                      <span>Ownership</span>
+                      <span>Connection</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="large-link" data-goto="practice">
+                  View practice map
+                  <svg><use href="#icon-arrow"></use></svg>
+                </button>
+                <button class="large-link" data-goto="projects">
+                  View Luna pathway example
+                  <svg><use href="#icon-arrow"></use></svg>
+                </button>
+              </div>
+            </article>
+            <article class="panel plan-column">
+              <h3>Teacher Moves</h3>
+              <ul>
+                <li>Open with a purpose question before the task.</li>
+                <li>Name the real-world use of the skill.</li>
+                <li>Connect feedback to growth, not just correction.</li>
+              </ul>
+            </article>
+            <article class="panel plan-column">
+              <h3>Learning Design Moves</h3>
+              <ul>
+                <li>Use a real audience or client problem.</li>
+                <li>Offer product choice with shared success criteria.</li>
+                <li>Add an industry, community or future pathway link.</li>
+              </ul>
+            </article>
+            <article class="panel plan-column">
+              <h3>Review Evidence</h3>
+              <ul>
+                <li>Short learner reflection after each sprint.</li>
+                <li>Teacher observation of participation quality.</li>
+                <li>Compare engagement across task types.</li>
+              </ul>
+            </article>
+            <article class="panel limits-planner">
+              <div class="panel-title">
+                <h3>Learning Without Limits Experience Menu</h3>
+                <span>Choose the mode that best expresses the response</span>
+              </div>
+              <p class="planner-intro">For Jenny's Purpose lever, the strongest next experience is likely to combine <strong>Apply</strong>, <strong>Create</strong> and <strong>Present</strong>: a real problem, a meaningful product and an authentic audience.</p>
+              <div class="limits-option-grid">
+                <button class="limits-option">
+                  <svg><use href="#icon-compass"></use></svg>
+                  <strong>Explore</strong>
+                  <span>Virtual reality, field experiences, interactive worlds, digital museums</span>
+                  <em>Use when curiosity or context is missing.</em>
+                </button>
+                <button class="limits-option">
+                  <svg><use href="#icon-chart"></use></svg>
+                  <strong>Simulate</strong>
+                  <span>Business sims, career scenarios, decision making, what-if modelling</span>
+                  <em>Use when learners need safe practice.</em>
+                </button>
+                <button class="limits-option recommended">
+                  <svg><use href="#icon-lightbulb"></use></svg>
+                  <strong>Create</strong>
+                  <span>Podcasts, videos, design, products, presentations</span>
+                  <em>Recommended: make learning purposeful and visible.</em>
+                </button>
+                <button class="limits-option recommended">
+                  <svg><use href="#icon-target"></use></svg>
+                  <strong>Apply</strong>
+                  <span>Real audiences, real clients, real impact, authentic learning</span>
+                  <em>Recommended: connect the work to why it matters.</em>
+                </button>
+                <button class="limits-option">
+                  <svg><use href="#icon-people"></use></svg>
+                  <strong>Collaborate</strong>
+                  <span>Co-create, share ideas, peer feedback, team success</span>
+                  <em>Use when belonging or confidence needs support.</em>
+                </button>
+                <button class="limits-option recommended">
+                  <svg><use href="#icon-rocket"></use></svg>
+                  <strong>Present</strong>
+                  <span>Pitch ideas, exhibitions, digital portfolios, community showcase</span>
+                  <em>Recommended: give the work an audience.</em>
+                </button>
+              </div>
+              <div class="experience-cycle" aria-label="Learning Without Limits cycle">
+                <span>Experience</span>
+                <b></b>
+                <span>Create</span>
+                <b></b>
+                <span>Reflect</span>
+                <b></b>
+                <span>Feedback</span>
+                <b></b>
+                <span>Improve</span>
+                <b></b>
+                <span>Apply</span>
+                <b></b>
+                <span>Experience again</span>
+              </div>
+              <button class="large-link" data-goto="limits">
+                View the full Learning Without Limits page
+                <svg><use href="#icon-arrow"></use></svg>
+              </button>
+            </article>
+            <article class="panel timeline-panel">
+              <div class="panel-title">
+                <h3>Three-Week Review Cycle</h3>
+                <span>Diagnose, respond, review</span>
+              </div>
+              <div class="timeline">
+                <div><b>Week 1</b><span>Purpose conversation and task redesign</span></div>
+                <div><b>Week 2</b><span>Authentic audience sprint and checkpoint</span></div>
+                <div><b>Week 3</b><span>Review voice, engagement and growth evidence</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
