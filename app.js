@@ -16,6 +16,7 @@ const navMap = {
   response: "response",
   practice: "practice",
   projects: "practice",
+  career: "practice",
   limits: "limits"
 };
 

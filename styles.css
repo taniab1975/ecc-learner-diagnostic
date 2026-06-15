@@ -972,8 +972,22 @@ h4 {
     var(--white);
 }
 
+.career-preview-card {
+  background:
+    linear-gradient(135deg, rgba(228, 245, 246, 0.96), rgba(255, 255, 255, 0.9)),
+    var(--white);
+}
+
 .project-preview-card h3 {
   color: var(--blue);
+}
+
+.career-preview-card h3 {
+  color: var(--teal);
+}
+
+.career-mark {
+  background: linear-gradient(135deg, var(--teal), var(--blue));
 }
 
 .product-spotlight h3 {
@@ -1794,7 +1808,7 @@ a.large-link {
 
 .recommended-product-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.85rem;
   margin-bottom: 1rem;
 }
@@ -1832,11 +1846,27 @@ a.large-link {
   align-items: start;
 }
 
+.career-layout {
+  display: grid;
+  grid-template-columns: minmax(38rem, 1.35fr) minmax(23rem, 0.8fr);
+  gap: 1rem;
+  align-items: start;
+}
+
 .project-poster {
   min-height: 0;
 }
 
+.career-hero-poster {
+  min-height: 0;
+}
+
 .project-board {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.career-board {
   display: grid;
   gap: 0.85rem;
 }
@@ -1850,6 +1880,60 @@ a.large-link {
 .project-summary h3 {
   font-size: clamp(1.7rem, 2.5vw, 2.6rem);
   color: var(--blue);
+}
+
+.career-summary {
+  background:
+    linear-gradient(135deg, rgba(228, 245, 246, 0.96), rgba(255, 255, 255, 0.9)),
+    var(--white);
+}
+
+.career-summary h3 {
+  font-size: clamp(1.45rem, 2vw, 2.05rem);
+  color: var(--teal);
+}
+
+.career-signal-grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.career-signal-grid div {
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.career-signal-grid strong,
+.career-signal-grid span {
+  display: block;
+}
+
+.career-signal-grid strong {
+  margin-bottom: 0.3rem;
+  color: var(--navy);
+}
+
+.career-signal-grid span {
+  color: #354866;
+  line-height: 1.35;
+  font-size: 0.9rem;
+}
+
+.career-screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.career-screenshot-grid .poster-card {
+  min-height: 0;
+}
+
+.career-screenshot-grid .poster-card:first-child {
+  grid-column: span 2;
 }
 
 .project-mode-grid {
@@ -2175,6 +2259,7 @@ a.large-link {
   .response-layout,
   .research-grid,
   .project-layout,
+  .career-layout,
   .authentic-projects-strip {
     grid-template-columns: 1fr;
   }
@@ -2231,6 +2316,7 @@ a.large-link {
   .project-mode-grid,
   .need-map-grid,
   .recommended-product-grid,
+  .career-screenshot-grid,
   .library-grid,
   .timeline,
   .signal-chain {
@@ -2284,8 +2370,10 @@ a.large-link {
   }
 
   .product-spotlight,
-  .recommended-product-body {
+  .recommended-product-body,
+  .career-screenshot-grid .poster-card:first-child {
     grid-template-columns: 1fr;
+    grid-column: span 1;
   }
 
   .bar-row,
