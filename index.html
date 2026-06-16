@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ECC Learner Diagnostic Mockups</title>
-    <link rel="stylesheet" href="styles.css?v=career-empire-1" />
+    <link rel="stylesheet" href="styles.css?v=needs-diagnostic-1" />
   </head>
   <body>
     <svg class="icon-sprite" aria-hidden="true">
@@ -781,41 +781,97 @@
             <div>
               <p class="eyebrow">Dashboard mockup</p>
               <h2 id="dashboard-title">Year 8 Learner Diagnostic</h2>
-              <p>Class view: where does each learner need the next best response?</p>
+              <p>Needs-first class view: what need is most likely, what evidence supports it, and what else could explain the pattern?</p>
             </div>
             <div class="dashboard-actions">
               <button data-goto="profile">Student drill-down</button>
-              <button data-goto="evidence">Evidence detail</button>
+              <button data-goto="evidence">Diagnostic matrix</button>
               <button data-goto="attributes">Attributes</button>
               <button data-goto="planner">Response planner</button>
             </div>
           </div>
           <div class="dashboard-grid">
+            <article class="panel dashboard-filter-panel">
+              <div class="panel-title">
+                <h3>View Lens</h3>
+                <span>Cohort -> subject -> learner</span>
+              </div>
+              <div class="filter-bar" aria-label="Dashboard view filters">
+                <label>
+                  <span>Cohort</span>
+                  <select aria-label="Select cohort">
+                    <option>Year 8 2026</option>
+                    <option>Year 8 Ignite</option>
+                    <option>Year 8 Pastoral Care</option>
+                  </select>
+                </label>
+                <label>
+                  <span>View</span>
+                  <select aria-label="Select view type">
+                    <option>Whole cohort</option>
+                    <option>Class group</option>
+                    <option>Subject</option>
+                    <option>Individual learner</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Subject</span>
+                  <select aria-label="Select subject">
+                    <option>All subjects</option>
+                    <option>Careers</option>
+                    <option>Mathematics</option>
+                    <option>English</option>
+                    <option>Science</option>
+                    <option>Pastoral Care</option>
+                  </select>
+                </label>
+                <label class="search-control">
+                  <span>Search learner</span>
+                  <input type="search" aria-label="Search learner" value="Jenny Smith" />
+                </label>
+              </div>
+              <p class="filter-note">Use the cohort view to see system patterns, the subject view to detect context-specific needs, and the learner view to check the evidence before planning a response.</p>
+            </article>
+
             <article class="metric-card">
-              <span>Class primary lever</span>
+              <span>Most common likely need</span>
               <strong>Purpose</strong>
               <small>11 of 28 learners</small>
             </article>
             <article class="metric-card">
-              <span>Hidden risk</span>
-              <strong>6</strong>
-              <small>Achievement masks disengagement</small>
+              <span>Evidence confidence</span>
+              <strong>Moderate</strong>
+              <small>Needs learner voice check</small>
             </article>
             <article class="metric-card">
-              <span>Attribute concern</span>
-              <strong>Flexibility</strong>
-              <small>Marked dip in Careers and Maths</small>
+              <span>Context pattern</span>
+              <strong>Subject-specific</strong>
+              <small>Careers and Maths dips</small>
             </article>
             <article class="metric-card">
-              <span>Next review</span>
+              <span>Review window</span>
               <strong>3 weeks</strong>
-              <small>Term 2 learning cycle</small>
+              <small>Test response, then recheck</small>
+            </article>
+
+            <article class="panel context-view-panel">
+              <div class="panel-title">
+                <h3>Cohort and Subject Lens</h3>
+                <span>Same learner, different learning context</span>
+              </div>
+              <div class="context-grid">
+                <div><strong>Whole Year 8</strong><span>Purpose is the most common emerging need, with confidence and ownership also visible in teacher-assessed attributes.</span><b>System pattern</b></div>
+                <div><strong>8 Ignite A</strong><span>Confidence and purpose are clustered: learners are trying, but several need clearer relevance and success experiences.</span><b>Class pattern</b></div>
+                <div><strong>Careers P3</strong><span>Competent students complete work at home but show lateness, low class engagement and weaker relevance comments.</span><b>Subject pattern</b></div>
+                <div><strong>Pastoral Care</strong><span>Connection is mostly stable, suggesting the issue may be learning-context specific rather than whole-school disengagement.</span><b>Protective context</b></div>
+              </div>
+              <p class="filter-note">This prevents over-generalising from one lesson or one data point: a learner may need Purpose in one subject, Confidence in another, and Connection support in a particular group context.</p>
             </article>
 
             <article class="panel class-map">
               <div class="panel-title">
-                <h3>Class Growth Levers</h3>
-                <span>Need support / on track / strength</span>
+                <h3>Class Learner Needs View</h3>
+                <span>Need support / watch / strength</span>
               </div>
               <div class="stacked-bars">
                 <div class="bar-row"><span>Challenge</span><i style="--a: 28%; --b: 44%; --c: 28%"></i><b>7 / 12 / 9</b></div>
@@ -829,49 +885,76 @@
             <article class="panel learner-table">
               <div class="panel-title">
                 <h3>Priority Learners</h3>
-                <span>Click a row to drill into the profile</span>
+                <span>Likely need, not fixed label</span>
               </div>
               <button class="learner-row" data-goto="profile">
                 <span class="avatar">JS</span>
-                <span><strong>Jenny Smith</strong><small>State: coasting</small></span>
+                <span><strong>Jenny Smith</strong><small>Competent, context-specific disengagement</small></span>
                 <b class="tag purpose-tag">Purpose</b>
-                <em>High risk</em>
+                <em>Check</em>
               </button>
               <button class="learner-row" data-goto="profile">
                 <span class="avatar alt">MK</span>
-                <span><strong>Micah King</strong><small>State: stuck</small></span>
+                <span><strong>Micah King</strong><small>Repeated attempts, reassurance seeking</small></span>
                 <b class="tag mastery-tag">Confidence</b>
-                <em>Medium</em>
+                <em>Likely</em>
               </button>
               <button class="learner-row" data-goto="profile">
                 <span class="avatar green">AL</span>
-                <span><strong>Ava Lin</strong><small>State: productive challenge</small></span>
+                <span><strong>Ava Lin</strong><small>Fast mastery, extension readiness</small></span>
                 <b class="tag challenge-tag">Challenge</b>
-                <em>Low</em>
+                <em>Likely</em>
               </button>
               <button class="learner-row" data-goto="profile">
                 <span class="avatar purple">TN</span>
-                <span><strong>Tom Nguyen</strong><small>State: disconnected</small></span>
+                <span><strong>Tom Nguyen</strong><small>Withdrawn participation, weak belonging</small></span>
                 <b class="tag connection-tag">Connection</b>
-                <em>High</em>
+                <em>Check</em>
               </button>
+            </article>
+
+            <article class="panel needs-matrix-panel">
+              <div class="panel-title">
+                <h3>Learner Needs Diagnostic Matrix</h3>
+                <span>Signals are hypotheses, not proof</span>
+              </div>
+              <div class="diagnostic-matrix">
+                <div><strong>Challenge</strong><span>Under-stretched or overwhelmed</span><em>Mastery, task time, extension uptake, difficulty ratings</em></div>
+                <div><strong>Confidence</strong><span>Avoids starting, seeks reassurance, repeated attempts</span><em>Retries, help requests, self-belief, scaffold use</em></div>
+                <div><strong>Purpose</strong><span>Capable but disengaged, low relevance, context avoidance</span><em>Subject attendance, lateness, learner voice, engagement notes</em></div>
+                <div><strong>Ownership</strong><span>Passive compliance, low agency, limited self-correction</span><em>Choice uptake, goal setting, resubmission, independent decisions</em></div>
+                <div><strong>Connection</strong><span>Withdrawn, low belonging, avoids group or class context</span><em>Pastoral notes, collaboration, wellbeing, participation patterns</em></div>
+              </div>
             </article>
 
             <article class="panel heatmap-panel">
               <div class="panel-title">
-                <h3>Cross-Curricular Heatmap</h3>
-                <span>Achievement, engagement and attributes</span>
+                <h3>Evidence Pattern Check</h3>
+                <span>Achievement, engagement and attributes by context</span>
               </div>
               <div class="heatmap">
                 <span></span><b>English</b><b>Maths</b><b>Science</b><b>Careers</b><b>Pastoral</b>
-                <b>Achievement</b><i class="good">B</i><i class="good">B</i><i class="good">B</i><i class="alert">D</i><i class="neutral">-</i>
-                <b>Engagement</b><i class="good">Good</i><i class="watch">Sat.</i><i class="good">Good</i><i class="alert">N/A</i><i class="watch">Sat.</i>
-                <b>Flexibility</b><i class="good">Good</i><i class="alert">N/A</i><i class="watch">Sat.</i><i class="alert">N/A</i><i class="watch">Sat.</i>
+                <b>Achievement</b><i class="good">B</i><i class="good">B</i><i class="good">B</i><i class="good">B</i><i class="neutral">-</i>
+                <b>Engagement</b><i class="good">Good</i><i class="watch">Sat.</i><i class="good">Good</i><i class="alert">Needs</i><i class="watch">Sat.</i>
+                <b>Flexibility</b><i class="good">Good</i><i class="alert">Needs</i><i class="watch">Sat.</i><i class="alert">Needs</i><i class="watch">Sat.</i>
                 <b>Respect</b><i class="good">Good</i><i class="good">Good</i><i class="good">Good</i><i class="watch">Sat.</i><i class="good">Good</i>
               </div>
               <div class="insight-note">
-                <strong>Pattern detected</strong>
-                <span>Jenny's achievement is masking attribute dips. Flexibility and engagement are weaker in Careers and Maths, while respect remains stable across contexts.</span>
+                <strong>Pattern detected, not diagnosis complete</strong>
+                <span>Jenny's achievement is masking attribute dips. This may indicate Purpose, but Connection, class pace, teacher relationship, anxiety or timetable effects must be checked before acting.</span>
+              </div>
+            </article>
+
+            <article class="panel subject-lens-panel">
+              <div class="panel-title">
+                <h3>Subject Drill-Down Example</h3>
+                <span>Careers P3</span>
+              </div>
+              <div class="subject-lens">
+                <div><strong>Visible pattern</strong><span>Work completed at home, but repeated late arrival and low in-class participation.</span></div>
+                <div><strong>Likely need</strong><span>Purpose: the learner may not yet see why this class matters.</span></div>
+                <div><strong>Check before acting</strong><span>Connection, timetable fatigue, peer group, teacher relationship, anxiety or assessment design.</span></div>
+                <div><strong>Best first response</strong><span>Purpose conversation, authentic audience and a short choice-rich task sprint.</span></div>
               </div>
             </article>
 
@@ -915,7 +998,7 @@
             <div>
               <p class="eyebrow">Student drill-down</p>
               <h2 id="profile-title">Jenny Smith: Whole Learner Profile</h2>
-              <p>Current learner state: coasting. Primary growth lever: purpose.</p>
+              <p>Likely need: Purpose. Evidence confidence is moderate because the pattern is context-specific and still needs a learner voice check.</p>
             </div>
             <div class="dashboard-actions">
               <button data-goto="dashboard">Class view</button>
@@ -928,10 +1011,21 @@
               <div class="profile-avatar">JS</div>
               <div>
                 <span class="mini-label">Year 8, House Emmanuel</span>
-                <h3>Strong achievement, declining relevance</h3>
-                <p>Jenny is maintaining grades across most subjects, but learner voice and teacher notes suggest the work is feeling less meaningful.</p>
+                <h3>Competent, but context-specific disengagement</h3>
+                <p>Jenny is maintaining grades across most subjects, but in Careers P3 she is arriving late, completing work away from class and reporting weaker relevance.</p>
               </div>
-              <b class="confidence-ring" style="--value: 84%">84%</b>
+              <b class="confidence-ring" style="--value: 68%">68%</b>
+            </article>
+            <article class="panel reasoning-panel">
+              <div class="panel-title">
+                <h3>Diagnostic Reasoning</h3>
+                <span>Evidence, interpretation and caution</span>
+              </div>
+              <div class="reasoning-grid">
+                <div><strong>Why Purpose is likely</strong><span>Achievement is sound, but engagement, learner voice and class attendance suggest low perceived relevance rather than low capability.</span></div>
+                <div><strong>What else could explain it</strong><span>Peer connection, teacher relationship, timetable fatigue, task format, anxiety or competing commitments could produce a similar pattern.</span></div>
+                <div><strong>What to check next</strong><span>Compare subject attendance, ask a short relevance question, review teacher notes and check whether engagement lifts with authentic application.</span></div>
+              </div>
             </article>
             <article class="panel domain-radar">
               <div class="panel-title">
@@ -977,8 +1071,8 @@
           <div class="dashboard-topbar">
             <div>
               <p class="eyebrow">Diagnostic drill-down</p>
-              <h2 id="evidence-title">Evidence Behind the Diagnosis</h2>
-              <p>Purpose is not a guess. It is a triangulated pattern across voice, engagement and context.</p>
+              <h2 id="evidence-title">Needs Diagnostic Matrix</h2>
+              <p>Evidence should support a working hypothesis, not create a permanent label. The strongest diagnosis combines need signals, subject context and a check for alternative explanations.</p>
             </div>
             <div class="dashboard-actions">
               <button data-goto="dashboard">Class view</button>
@@ -1020,15 +1114,22 @@
             </article>
             <article class="panel evidence-synthesis">
               <div class="panel-title">
-                <h3>Diagnostic Synthesis</h3>
-                <span>What is getting in the way?</span>
+                <h3>How the Dashboard Should Decide</h3>
+                <span>Balanced diagnostic logic</span>
               </div>
-              <p>Jenny appears capable and connected enough to keep performing, but the purpose signal is weakening. The best response is likely to increase relevance, authentic application and student choice before achievement declines.</p>
+              <div class="diagnostic-matrix evidence-version">
+                <div><strong>Challenge</strong><span>Too easy, too hard, or not productively stretched</span><em>Mastery trend, extension uptake, challenge rating, time-on-task</em></div>
+                <div><strong>Confidence</strong><span>Low self-belief or fragile persistence</span><em>Help seeking, retries, scaffold dependence, reflection tone</em></div>
+                <div><strong>Purpose</strong><span>Competent but not seeing relevance or value</span><em>Subject attendance, lateness, learner voice, voluntary effort</em></div>
+                <div><strong>Ownership</strong><span>Limited agency, passivity or weak self-direction</span><em>Choice uptake, goal setting, self-correction, independent decisions</em></div>
+                <div><strong>Connection</strong><span>Weak belonging, participation or relational safety</span><em>Pastoral notes, collaboration, peer context, wellbeing signals</em></div>
+              </div>
               <div class="signal-chain">
-                <span>Achievement stable</span>
-                <span>Engagement falling</span>
-                <span>Purpose low</span>
-                <strong>Act early</strong>
+                <span>Need signal</span>
+                <span>Evidence sources</span>
+                <span>Subject pattern</span>
+                <span>Alternative checks</span>
+                <strong>Response plan</strong>
               </div>
             </article>
           </div>
@@ -1071,12 +1172,12 @@
               <div class="attribute-matrix">
                 <span></span><b>Eng.</b><b>Maths</b><b>Science</b><b>Careers</b><b>Pastoral</b>
                 <b>Collaboration</b><i class="good">G</i><i class="good">G</i><i class="watch">S</i><i class="watch">S</i><i class="good">G</i>
-                <b>Engagement</b><i class="good">G</i><i class="watch">S</i><i class="good">G</i><i class="alert">N/A</i><i class="watch">S</i>
-                <b>Flexibility</b><i class="good">G</i><i class="alert">N/A</i><i class="watch">S</i><i class="alert">N/A</i><i class="watch">S</i>
+                <b>Engagement</b><i class="good">G</i><i class="watch">S</i><i class="good">G</i><i class="alert">NA</i><i class="watch">S</i>
+                <b>Flexibility</b><i class="good">G</i><i class="alert">NA</i><i class="watch">S</i><i class="alert">NA</i><i class="watch">S</i>
                 <b>Critical Thinking</b><i class="good">G</i><i class="watch">S</i><i class="good">G</i><i class="watch">S</i><i class="neutral">-</i>
                 <b>Respect</b><i class="good">G</i><i class="good">G</i><i class="good">G</i><i class="watch">S</i><i class="good">G</i>
               </div>
-              <p class="attribute-note">Key: G = Good, S = Satisfactory, N/A = Needs Attention. The diagnostic looks for pattern and variation, not a single attribute score.</p>
+              <p class="attribute-note">Key: G = Good, S = Satisfactory, NA = Needs Attention. The diagnostic looks for pattern and variation, not a single attribute score.</p>
             </article>
             <article class="panel attribute-mapping-panel">
               <div class="panel-title">

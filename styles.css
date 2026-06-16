@@ -1256,6 +1256,150 @@ a.large-link {
   grid-column: span 12;
 }
 
+.dashboard-filter-panel,
+.context-view-panel,
+.needs-matrix-panel {
+  grid-column: span 12;
+}
+
+.subject-lens-panel {
+  grid-column: span 5;
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.filter-bar label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.filter-bar select,
+.filter-bar input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.filter-note {
+  margin-top: 0.85rem;
+  color: #354866;
+  line-height: 1.45;
+}
+
+.context-grid,
+.diagnostic-matrix,
+.subject-lens,
+.reasoning-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.context-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.diagnostic-matrix {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.subject-lens,
+.reasoning-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reasoning-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.context-grid div,
+.diagnostic-matrix div,
+.subject-lens div,
+.reasoning-grid div {
+  min-height: 7rem;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--white), #f7fafc);
+}
+
+.context-grid strong,
+.context-grid span,
+.context-grid b,
+.diagnostic-matrix strong,
+.diagnostic-matrix span,
+.diagnostic-matrix em,
+.subject-lens strong,
+.subject-lens span,
+.reasoning-grid strong,
+.reasoning-grid span {
+  display: block;
+}
+
+.context-grid strong,
+.diagnostic-matrix strong,
+.subject-lens strong,
+.reasoning-grid strong {
+  margin-bottom: 0.35rem;
+  color: var(--navy);
+}
+
+.context-grid span,
+.diagnostic-matrix span,
+.subject-lens span,
+.reasoning-grid span {
+  color: #354866;
+  line-height: 1.35;
+  font-size: 0.9rem;
+}
+
+.context-grid b,
+.diagnostic-matrix em {
+  margin-top: 0.6rem;
+  color: var(--teal);
+  font-size: 0.76rem;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.diagnostic-matrix div:nth-child(1) {
+  border-top: 0.35rem solid var(--teal);
+}
+
+.diagnostic-matrix div:nth-child(2) {
+  border-top: 0.35rem solid var(--blue);
+}
+
+.diagnostic-matrix div:nth-child(3) {
+  border-top: 0.35rem solid var(--orange);
+}
+
+.diagnostic-matrix div:nth-child(4) {
+  border-top: 0.35rem solid var(--purple);
+}
+
+.diagnostic-matrix div:nth-child(5) {
+  border-top: 0.35rem solid #08718d;
+}
+
+.reasoning-panel {
+  grid-column: span 12;
+}
+
 .stacked-bars {
   display: grid;
   gap: 0.8rem;
@@ -2248,8 +2392,16 @@ a.large-link {
   .experience-grid,
   .pathway-row,
   .limits-option-grid,
-  .library-grid {
+  .library-grid,
+  .diagnostic-matrix {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .filter-bar,
+  .context-grid,
+  .subject-lens,
+  .reasoning-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-panel,
@@ -2273,11 +2425,16 @@ a.large-link {
   }
 
   .metric-card,
+  .dashboard-filter-panel,
+  .context-view-panel,
   .class-map,
   .learner-table,
+  .needs-matrix-panel,
   .heatmap-panel,
+  .subject-lens-panel,
   .action-panel,
   .attributes-panel,
+  .reasoning-panel,
   .domain-radar,
   .trend-panel,
   .next-steps-card,
@@ -2310,6 +2467,11 @@ a.large-link {
   .experience-grid,
   .pathway-row,
   .limits-option-grid,
+  .filter-bar,
+  .context-grid,
+  .diagnostic-matrix,
+  .subject-lens,
+  .reasoning-grid,
   .practice-diagnostic-grid,
   .practice-fit-grid,
   .trigger-grid,
@@ -2348,11 +2510,16 @@ a.large-link {
   }
 
   .metric-card,
+  .dashboard-filter-panel,
+  .context-view-panel,
   .class-map,
   .learner-table,
+  .needs-matrix-panel,
   .heatmap-panel,
+  .subject-lens-panel,
   .action-panel,
   .attributes-panel,
+  .reasoning-panel,
   .domain-radar,
   .trend-panel,
   .next-steps-card,
